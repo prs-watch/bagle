@@ -104,7 +104,7 @@ const search = () => {
       <el-header>Bagle</el-header>
       <el-main>
         <el-row justify="center">
-          <el-col :span="10">
+          <el-col :span="20">
             <el-autocomplete
               v-model="input"
               size="large"
@@ -175,6 +175,10 @@ body {
     font-size: 5em;
     text-align: center;
     --el-header-height: 1.4em !important;
+}
+
+.el-input {
+  --el-border-radius-base: 20px;
 }
 
 .button-area {
