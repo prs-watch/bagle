@@ -1,11 +1,18 @@
-# Vue 3 + Typescript + Vite
+# Bagle
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Fastest search engine for MLB players' info. 
 
-## Recommended IDE Setup
+**Note**: "Bagle" is coined word of "Baseball" and "Google".
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## What Bagle provides?
 
-## Type Support For `.vue` Imports in TS
+Once you input specific player name and click search button, then, you can access links of following player's info sites.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- Baseball-Reference
+- FanGraphs
+- Baseball Savant
+- MLB.com
+
+## Why fast?
+
+Bagle serches players' info from local CSV data `people.csv`, which is created by [Chadwick Baseball Bureau](https://github.com/chadwickbureau). Since Bagle do not process HTTP requests, you can access some usable sites quickly.
