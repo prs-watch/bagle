@@ -15,9 +15,24 @@ export default defineConfig({
             resolvers: [ElementPlusResolver()],
         }),
     ],
-    root: 'src',
     build: {
         outDir: 'dist',
     },
     assetsInclude: ['**/*.csv'],
+    css: {
+        postcss: {
+            plugins: [
+                {
+                    postcssPlugin: 'internal:charset-removal',
+                    AtRule: {
+                        charset: (atRule) => {
+                            if (atRule.name === 'charset') {
+                                atRule.remove();
+                            }
+                        },
+                    },
+                },
+            ],
+        },
+    },
 });

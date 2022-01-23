@@ -13,7 +13,7 @@ defineProps<{
   >
     <el-card shadow="always">
       <el-image
-        :src="`../images/${siteType}.png`"
+        :src="`/images/${siteType}.png`"
         fit="fill"
         style="width: 300px; height: 300px"
       />
